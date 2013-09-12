@@ -609,21 +609,6 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <vertex x="-3.3681" y="-0.0101" curve="-90.012967"/>
 </polygon>
 </package>
-<package name="SOT-23">
-<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
-<wire x1="-1.4224" y1="0.381" x2="1.4732" y2="0.381" width="0.1524" layer="21"/>
-<wire x1="1.4732" y1="0.381" x2="1.4732" y2="-0.381" width="0.1524" layer="21"/>
-<wire x1="1.4732" y1="-0.381" x2="-1.4224" y2="-0.381" width="0.1524" layer="21"/>
-<wire x1="-1.4224" y1="-0.381" x2="-1.4224" y2="0.381" width="0.1524" layer="21"/>
-<smd name="3" x="0.9906" y="1.016" dx="0.7874" dy="1.016" layer="1" roundness="45"/>
-<smd name="2" x="-0.9398" y="1.016" dx="0.7874" dy="1.016" layer="1" roundness="45"/>
-<smd name="1" x="0.0254" y="-1.016" dx="0.7874" dy="1.016" layer="1" roundness="45"/>
-<text x="-1.397" y="1.778" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-1.397" y="3.302" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<rectangle x1="0.7874" y1="0.4318" x2="1.1684" y2="0.9398" layer="51"/>
-<rectangle x1="-1.143" y1="0.4318" x2="-0.762" y2="0.9398" layer="51"/>
-<rectangle x1="-0.1778" y1="-0.9398" x2="0.2032" y2="-0.4318" layer="51"/>
-</package>
 <package name="SWPCBLOGOWITHINFO">
 <rectangle x1="1.75895" y1="-0.00635" x2="2.06375" y2="0.00635" layer="21"/>
 <rectangle x1="1.64465" y1="0.00635" x2="2.17805" y2="0.01905" layer="21"/>
@@ -2790,17 +2775,6 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <text x="-3.81" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-</symbol>
-<symbol name="MCP1541">
-<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="10.16" x2="7.62" y2="10.16" width="0.254" layer="94"/>
-<wire x1="7.62" y1="10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
-<pin name="VIN" x="-15.24" y="5.08" length="middle" direction="pwr"/>
-<pin name="VREF" x="-15.24" y="-5.08" length="middle" direction="out"/>
-<pin name="VSS" x="12.7" y="0" length="middle" direction="pwr" rot="R180"/>
-<text x="-10.16" y="-12.7" size="1.778" layer="95">&gt;VALUE</text>
-<text x="-10.16" y="12.7" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="DINA4_L">
 <wire x1="0" y1="180.34" x2="0" y2="133.35" width="0.3" layer="94"/>
@@ -5363,23 +5337,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </device>
 </devices>
 </deviceset>
-<deviceset name="MCP1541">
-<gates>
-<gate name="G$1" symbol="MCP1541" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT-23">
-<connects>
-<connect gate="G$1" pin="VIN" pad="3"/>
-<connect gate="G$1" pin="VREF" pad="2"/>
-<connect gate="G$1" pin="VSS" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="FRAME_MINIEC">
 <description>&lt;h4&gt;A4 Sparky's Widgets frame&lt;/h4&gt;
 &lt;p&gt;
@@ -5394,7 +5351,7 @@ This is a standard A4 Frame, the Doc Field has been modified with our Logo and c
 <technologies>
 <technology name="">
 <attribute name="PROJECT" value="Mini eC I2C eC Interface" constant="no"/>
-<attribute name="URL1" value="/Projects/MiniEc.aspx" constant="no"/>
+<attribute name="URL1" value="/portfolio-item/miniEc/" constant="no"/>
 <attribute name="URLHOME" value="http://www.sparkyswidgets.com" constant="no"/>
 <attribute name="URLPROJECT" value="http://www.sparkyswidgets.com" constant="no"/>
 </technology>
@@ -5825,62 +5782,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <text x="-1.73" y="1.73" size="0.4064" layer="25" rot="R180">&gt;NAME</text>
 <text x="3.46" y="1.73" size="0.4064" layer="27" rot="R180">&gt;VALUE</text>
 </package>
-<package name="SJ_2S">
-<description>Small solder jumper with big paste layer so it will short during reflow.</description>
-<wire x1="0.8" y1="-1" x2="-0.8" y2="-1" width="0.1524" layer="21"/>
-<wire x1="0.8" y1="1" x2="1.1" y2="0.75" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.1" y1="0.75" x2="-0.8" y2="1" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.1" y1="-0.75" x2="-0.8" y2="-1" width="0.1524" layer="21" curve="90.114706"/>
-<wire x1="0.8" y1="-1" x2="1.1" y2="-0.75" width="0.1524" layer="21" curve="90"/>
-<wire x1="1.1" y1="-0.75" x2="1.1" y2="0.75" width="0.1524" layer="21"/>
-<wire x1="-1.1" y1="-0.75" x2="-1.1" y2="0.75" width="0.1524" layer="21"/>
-<wire x1="-0.8" y1="1" x2="0.8" y2="1" width="0.1524" layer="21"/>
-<smd name="1" x="-0.4119" y="0" dx="0.635" dy="1.27" layer="1"/>
-<smd name="2" x="0.4119" y="0" dx="0.635" dy="1.27" layer="1"/>
-<text x="-0.9498" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-0.9498" y="-1.651" size="0.4064" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.2192" y1="-1.143" x2="1.2192" y2="1.143" layer="31"/>
-</package>
-<package name="SJ_2S-TRACE">
-<description>Solder jumper, small, shorted with trace. No paste layer. Trace is cuttable.</description>
-<wire x1="0.8255" y1="-1.016" x2="-0.8255" y2="-1.016" width="0.2032" layer="21"/>
-<wire x1="0.8255" y1="1.016" x2="1.0795" y2="0.762" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-1.0795" y1="0.762" x2="-0.8255" y2="1.016" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-1.0795" y1="-0.762" x2="-0.8255" y2="-1.016" width="0.2032" layer="21" curve="90"/>
-<wire x1="0.8255" y1="-1.016" x2="1.0795" y2="-0.762" width="0.2032" layer="21" curve="90"/>
-<wire x1="-0.8255" y1="1.016" x2="0.8255" y2="1.016" width="0.2032" layer="21"/>
-<wire x1="-0.381" y1="0" x2="0.381" y2="0" width="0.2032" layer="1"/>
-<smd name="1" x="-0.508" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<smd name="2" x="0.508" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<text x="-0.9525" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-0.9525" y="-1.651" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
-<package name="SJ_2S-NOTRACE">
-<wire x1="0.8" y1="-1" x2="-0.8" y2="-1" width="0.2032" layer="21"/>
-<wire x1="0.8" y1="1" x2="1" y2="0.7" width="0.2032" layer="21" curve="-90.076445"/>
-<wire x1="-1" y1="0.7" x2="-0.8" y2="1" width="0.2032" layer="21" curve="-90.03821"/>
-<wire x1="-1" y1="-0.7" x2="-0.8" y2="-1" width="0.2032" layer="21" curve="90.03821"/>
-<wire x1="0.8" y1="-1" x2="1" y2="-0.7" width="0.2032" layer="21" curve="90.03821"/>
-<wire x1="-0.8" y1="1" x2="0.8" y2="1" width="0.2032" layer="21"/>
-<smd name="1" x="-0.4009" y="0" dx="0.635" dy="1.27" layer="1" rot="R180" cream="no"/>
-<smd name="2" x="0.4127" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<text x="-0.9525" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-0.9525" y="-1.651" size="0.4064" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.016" y1="-1.016" x2="1.016" y2="1.016" layer="31"/>
-</package>
-<package name="SJ_2S-NO">
-<description>Small solder jumper with no paste layer so it will open after reflow.</description>
-<wire x1="0.8" y1="-1" x2="-0.8" y2="-1" width="0.2032" layer="21"/>
-<wire x1="0.8" y1="1" x2="1" y2="0.7" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-1" y1="0.7" x2="-0.8" y2="1" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-1" y1="-0.7" x2="-0.8" y2="-1" width="0.2032" layer="21" curve="90"/>
-<wire x1="0.8" y1="-1" x2="1" y2="-0.7" width="0.2032" layer="21" curve="90"/>
-<wire x1="-0.8" y1="1" x2="0.8" y2="1" width="0.2032" layer="21"/>
-<smd name="1" x="-0.45" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<smd name="2" x="0.45" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<text x="-0.908" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-0.908" y="-1.651" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
 </packages>
 <symbols>
 <symbol name="STAND-OFF">
@@ -5901,16 +5802,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pin name="2" x="5.08" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="3" x="5.08" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="4" x="5.08" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-</symbol>
-<symbol name="SJ">
-<wire x1="0.381" y1="0.635" x2="0.381" y2="-0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
-<wire x1="-0.381" y1="-0.635" x2="-0.381" y2="0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
-<wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.651" y2="0" width="0.1524" layer="94"/>
-<text x="-2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -6078,51 +5969,6 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="4" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SOLDERJUMPER" prefix="SJ">
-<description>&lt;b&gt;Solder Jumper&lt;/b&gt;
-Standard SMD solder jumper. Used to automate production. Two varients : Normally Open and Normally Closed are the same, but have different paste layers. NC will have a large amount of paste and should jumper during reflow.</description>
-<gates>
-<gate name="1" symbol="SJ" x="0" y="0"/>
-</gates>
-<devices>
-<device name="NC" package="SJ_2S">
-<connects>
-<connect gate="1" pin="1" pad="1"/>
-<connect gate="1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="TRACE" package="SJ_2S-TRACE">
-<connects>
-<connect gate="1" pin="1" pad="1"/>
-<connect gate="1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="NC2" package="SJ_2S-NOTRACE">
-<connects>
-<connect gate="1" pin="1" pad="1"/>
-<connect gate="1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="NO" package="SJ_2S-NO">
-<connects>
-<connect gate="1" pin="1" pad="1"/>
-<connect gate="1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6339,7 +6185,6 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="C12" library="SparkysWidgets" deviceset="CAP" device="0805" value="1uF"/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
-<part name="C1" library="SparkysWidgets" deviceset="CAP" device="0805" value="10uF"/>
 <part name="C2" library="SparkysWidgets" deviceset="CAP" device="0805" value=".1uF"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
@@ -6357,16 +6202,9 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="JP5" library="SparkFun" deviceset="M04" device="PTH"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="P+8" library="supply1" deviceset="+5V" device=""/>
-<part name="U$6" library="SparkysWidgets" deviceset="MCP1541" device=""/>
-<part name="GND8" library="supply1" deviceset="GND" device=""/>
-<part name="C3" library="SparkysWidgets" deviceset="CAP" device="0805" value=".1uF"/>
-<part name="GND11" library="supply1" deviceset="GND" device=""/>
-<part name="GND12" library="supply1" deviceset="GND" device=""/>
-<part name="P+6" library="supply1" deviceset="+5V" device=""/>
-<part name="SJ1" library="SparkFun" deviceset="SOLDERJUMPER" device="NC2"/>
 <part name="U$4" library="SparkysWidgets" deviceset="FRAME_MINIEC" device="">
 <attribute name="PROJECT" value="Mini eC I2C eC Interface"/>
-<attribute name="URL1" value="/Projects/MiniEc.aspx"/>
+<attribute name="URL1" value="/portfolio-item/miniEc/"/>
 </part>
 <part name="U$5" library="SparkysWidgets" deviceset="CC-BY-SA" device=""/>
 <part name="ECPROBE" library="SparkysWidgets" deviceset="BNC" device="PTH"/>
@@ -6394,18 +6232,22 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <sheets>
 <sheet>
 <plain>
-<text x="20.32" y="147.32" size="1.778" layer="94">Grove Connector</text>
-<text x="12.7" y="114.3" size="1.778" layer="94">Standard .1 pitch header</text>
+<text x="91.44" y="134.62" size="1.778" layer="94">Grove Connector</text>
+<text x="15.24" y="134.62" size="1.778" layer="94">Standard .1 pitch header</text>
 <text x="170.18" y="83.82" size="1.778" layer="94">12 bit ADC</text>
 <text x="190.5" y="162.56" size="1.778" layer="94">Charge pump, negative voltage gen</text>
 <text x="20.32" y="81.28" size="2.1844" layer="94">Analog Front End</text>
-<wire x1="0" y1="88.9" x2="86.36" y2="88.9" width="0.1524" layer="94"/>
-<wire x1="86.36" y1="88.9" x2="157.48" y2="88.9" width="0.1524" layer="94"/>
+<wire x1="0" y1="88.9" x2="157.48" y2="88.9" width="0.1524" layer="94"/>
 <wire x1="157.48" y1="88.9" x2="157.48" y2="0" width="0.1524" layer="94"/>
 <wire x1="157.48" y1="88.9" x2="157.48" y2="121.92" width="0.1524" layer="94"/>
 <wire x1="157.48" y1="121.92" x2="157.48" y2="177.8" width="0.1524" layer="94"/>
 <wire x1="157.48" y1="121.92" x2="264.16" y2="121.92" width="0.1524" layer="94"/>
-<wire x1="86.36" y1="88.9" x2="86.36" y2="180.34" width="0.1524" layer="94"/>
+<rectangle x1="20.32" y1="15.24" x2="66.04" y2="33.02" layer="98"/>
+<text x="22.86" y="27.94" size="1.778" layer="94">Basic Wein Bridge Oscillator</text>
+<text x="22.86" y="25.4" size="1.778" layer="94">Gain ~= 3, R4/R3 ~=2</text>
+<text x="22.86" y="20.32" size="1.778" layer="94">R15= R16 and C4= C5 (forms bandpass)
+Positive feedback at bandpass (osc) Fq</text>
+<text x="22.86" y="17.78" size="1.778" layer="94">OSCfq=1/(2piR16C4)</text>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="198.12" y="71.12"/>
@@ -6418,7 +6260,6 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <instance part="C12" gate="G$1" x="180.34" y="142.24"/>
 <instance part="GND9" gate="1" x="180.34" y="165.1" rot="R180"/>
 <instance part="GND10" gate="1" x="215.9" y="142.24" rot="R90"/>
-<instance part="C1" gate="G$1" x="134.62" y="144.78" rot="R180"/>
 <instance part="C2" gate="G$1" x="190.5" y="86.36" smashed="yes" rot="R270">
 <attribute name="NAME" x="189.484" y="94.361" size="1.778" layer="95"/>
 <attribute name="VALUE" x="189.484" y="91.821" size="1.778" layer="96"/>
@@ -6433,22 +6274,12 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <instance part="JP2" gate="G$1" x="132.08" y="10.16"/>
 <instance part="JP3" gate="G$1" x="139.7" y="10.16"/>
 <instance part="JP4" gate="G$1" x="147.32" y="10.16"/>
-<instance part="J1" gate="G$1" x="45.72" y="149.86" rot="R180"/>
-<instance part="P+7" gate="1" x="60.96" y="149.86" rot="R270"/>
-<instance part="GND6" gate="1" x="50.8" y="157.48" rot="R180"/>
-<instance part="JP5" gate="G$1" x="45.72" y="111.76"/>
-<instance part="GND7" gate="1" x="60.96" y="116.84" rot="R90"/>
-<instance part="P+8" gate="1" x="68.58" y="119.38"/>
-<instance part="U$6" gate="G$1" x="116.84" y="134.62" rot="R180"/>
-<instance part="GND8" gate="1" x="101.6" y="127"/>
-<instance part="C3" gate="G$1" x="134.62" y="124.46"/>
-<instance part="GND11" gate="1" x="134.62" y="152.4" rot="R180"/>
-<instance part="GND12" gate="1" x="134.62" y="114.3"/>
-<instance part="P+6" gate="1" x="144.78" y="129.54" rot="R270"/>
-<instance part="SJ1" gate="1" x="193.04" y="99.06" smashed="yes">
-<attribute name="NAME" x="190.5" y="101.6" size="1.778" layer="95"/>
-<attribute name="VALUE" x="185.42" y="104.14" size="1.778" layer="96"/>
-</instance>
+<instance part="J1" gate="G$1" x="116.84" y="137.16" rot="R180"/>
+<instance part="P+7" gate="1" x="132.08" y="137.16" rot="R270"/>
+<instance part="GND6" gate="1" x="121.92" y="144.78" rot="R180"/>
+<instance part="JP5" gate="G$1" x="48.26" y="132.08"/>
+<instance part="GND7" gate="1" x="63.5" y="137.16" rot="R90"/>
+<instance part="P+8" gate="1" x="71.12" y="139.7"/>
 <instance part="U$4" gate="G$1" x="0" y="0"/>
 <instance part="U$4" gate="G$2" x="158.496" y="3.81"/>
 <instance part="U$5" gate="G$1" x="226.06" y="10.16"/>
@@ -6507,10 +6338,16 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <wire x1="215.9" y1="91.44" x2="215.9" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="P+2" gate="1" pin="+5V"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="SJ1" gate="1" pin="2"/>
 <wire x1="215.9" y1="91.44" x2="198.12" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="91.44" x2="198.12" y2="99.06" width="0.1524" layer="91"/>
 <junction x="215.9" y="91.44"/>
+<pinref part="C2" gate="G$1" pin="2"/>
+<wire x1="187.96" y1="86.36" x2="187.96" y2="99.06" width="0.1524" layer="91"/>
+<label x="185.42" y="91.44" size="1.778" layer="95" rot="R90"/>
+<pinref part="IC1" gate="G$1" pin="VDD"/>
+<wire x1="187.96" y1="86.36" x2="187.96" y2="76.2" width="0.1524" layer="91"/>
+<junction x="187.96" y="86.36"/>
+<wire x1="187.96" y1="99.06" x2="198.12" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="215.9" y1="55.88" x2="215.9" y2="50.8" width="0.1524" layer="91"/>
@@ -6519,22 +6356,14 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="3"/>
-<wire x1="48.26" y1="149.86" x2="58.42" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="137.16" x2="129.54" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="P+7" gate="1" pin="+5V"/>
 </segment>
 <segment>
 <pinref part="JP5" gate="G$1" pin="3"/>
 <pinref part="P+8" gate="1" pin="+5V"/>
-<wire x1="50.8" y1="114.3" x2="68.58" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="114.3" x2="68.58" y2="116.84" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$6" gate="G$1" pin="VIN"/>
-<pinref part="P+6" gate="1" pin="+5V"/>
-<wire x1="132.08" y1="129.54" x2="134.62" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="134.62" y1="129.54" x2="142.24" y2="129.54" width="0.1524" layer="91"/>
-<junction x="134.62" y="129.54"/>
+<wire x1="53.34" y1="134.62" x2="71.12" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="134.62" x2="71.12" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="48.26" y1="58.42" x2="50.8" y2="58.42" width="0.1524" layer="91"/>
@@ -6570,30 +6399,14 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="4"/>
-<wire x1="48.26" y1="152.4" x2="50.8" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="152.4" x2="50.8" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="139.7" x2="121.92" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="139.7" x2="121.92" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="JP5" gate="G$1" pin="4"/>
-<wire x1="50.8" y1="116.84" x2="58.42" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="137.16" x2="60.96" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="C1" gate="G$1" pin="2"/>
-<pinref part="GND11" gate="1" pin="GND"/>
-<wire x1="134.62" y1="147.32" x2="134.62" y2="149.86" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND12" gate="1" pin="GND"/>
-<pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="134.62" y1="116.84" x2="134.62" y2="121.92" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND8" gate="1" pin="GND"/>
-<wire x1="101.6" y1="134.62" x2="101.6" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="U$6" gate="G$1" pin="VSS"/>
-<wire x1="101.6" y1="134.62" x2="104.14" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R15" gate="G$1" pin="1"/>
@@ -6661,18 +6474,11 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <pinref part="IC5" gate="G$1" pin="CFLY+"/>
 </segment>
 </net>
-<net name="PHVO" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="AIN"/>
-<wire x1="187.96" y1="66.04" x2="182.88" y2="66.04" width="0.1524" layer="91"/>
-<label x="182.88" y="63.5" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="SCL" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="1"/>
-<wire x1="48.26" y1="144.78" x2="58.42" y2="144.78" width="0.1524" layer="91"/>
-<label x="55.88" y="144.78" size="1.778" layer="95" rot="R180"/>
+<wire x1="119.38" y1="132.08" x2="129.54" y2="132.08" width="0.1524" layer="91"/>
+<label x="127" y="132.08" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
 <wire x1="210.82" y1="76.2" x2="215.9" y2="76.2" width="0.1524" layer="91"/>
@@ -6685,15 +6491,15 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 </segment>
 <segment>
 <pinref part="JP5" gate="G$1" pin="1"/>
-<wire x1="50.8" y1="109.22" x2="58.42" y2="109.22" width="0.1524" layer="91"/>
-<label x="53.34" y="109.22" size="1.778" layer="95"/>
+<wire x1="53.34" y1="129.54" x2="60.96" y2="129.54" width="0.1524" layer="91"/>
+<label x="55.88" y="129.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDA" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="2"/>
-<wire x1="48.26" y1="147.32" x2="58.42" y2="147.32" width="0.1524" layer="91"/>
-<label x="55.88" y="147.32" size="1.778" layer="95" rot="R180"/>
+<wire x1="119.38" y1="134.62" x2="129.54" y2="134.62" width="0.1524" layer="91"/>
+<label x="127" y="134.62" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
 <wire x1="210.82" y1="66.04" x2="215.9" y2="66.04" width="0.1524" layer="91"/>
@@ -6705,27 +6511,8 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 </segment>
 <segment>
 <pinref part="JP5" gate="G$1" pin="2"/>
-<wire x1="50.8" y1="111.76" x2="58.42" y2="111.76" width="0.1524" layer="91"/>
-<label x="53.34" y="111.76" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="VREF" class="0">
-<segment>
-<pinref part="U$6" gate="G$1" pin="VREF"/>
-<pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="132.08" y1="139.7" x2="134.62" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="139.7" x2="144.78" y2="139.7" width="0.1524" layer="91"/>
-<junction x="134.62" y="139.7"/>
-<label x="139.7" y="142.24" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="187.96" y1="86.36" x2="187.96" y2="99.06" width="0.1524" layer="91"/>
-<label x="185.42" y="91.44" size="1.778" layer="95" rot="R90"/>
-<pinref part="IC1" gate="G$1" pin="VDD"/>
-<wire x1="187.96" y1="86.36" x2="187.96" y2="76.2" width="0.1524" layer="91"/>
-<junction x="187.96" y="86.36"/>
-<pinref part="SJ1" gate="1" pin="1"/>
+<wire x1="53.34" y1="132.08" x2="60.96" y2="132.08" width="0.1524" layer="91"/>
+<label x="55.88" y="132.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DCECOUT(A9)" class="0">
@@ -6742,6 +6529,11 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <wire x1="134.62" y1="48.26" x2="139.7" y2="48.26" width="0.1524" layer="91"/>
 <junction x="134.62" y="48.26"/>
 <label x="132.08" y="48.26" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="AIN"/>
+<wire x1="187.96" y1="66.04" x2="182.88" y2="66.04" width="0.1524" layer="91"/>
+<label x="182.88" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -6832,4 +6624,10 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>

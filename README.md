@@ -4,14 +4,14 @@ Welcome To: MinieC Hardware Repo!!
 
 ##### Note: This is for the MinieC Hardware Version 1 Branch
 
-MinieC Hardware Design Files in EAGLE. Not much to say, there are some custom parts will add Library after I clean it up!
+MinieC Hardware Design Files in EAGLE. Layout is finally finished and the board is in an operational state. Care must be taken when using this in conjunction with another probe (pH, DO etc...). An isolated unit is in the works, and the I2C isolation breakout can fix this should issues arise.
 
 Schematic Info
 -------------------------
-##### Basic schematic is spilt into sections
+##### Basic schematic is split into sections
 
 - Charge Pump section
-- Analog Front End - AC oscillator stage witha variable gain stage based on SUT conductivity
+- Analog Front End - AC oscillator stage with a variable gain stage based on SUT conductivity
 - 12bit ADC
 
 Board Layout Info
@@ -26,24 +26,22 @@ Errata
 -------------------------
 
 ##### Just a quick list of current issues
-- Clain up sine wave just a touch, maybe add fq selector (would be a 10x range deal)
+- Clean up sine wave just a touch, maybe add fq selector (would be a 10x range deal)
 
 
 Firmware
 -------------------------
 
 - Take a look in [MinieC's Firmware Repo](https://github.com/SparkysWidgets/MinieCBFW) For Arduino!
-- Check out my USB eC/TDS interface[LeoEc](http://www.sparkyswidgets.com/Projects/LeoEc.aspx) for a powerful and easy to use USB eC/TDS Probe interface!
+- Check out my USB eC/TDS interface [LeoEc](http://www.sparkyswidgets.com/Projects/LeoEc.aspx) for a powerful and easy to use USB eC/TDS Probe interface!
 
 Basic Usage
 -------------------------
 
-Usage of MinieC example code is very easy. There are only a few commands, but that doesnt mean you cant augment this further.
+Usage of MinieC example code is very easy. As of now you read the peak off the output and form a linear map based off a one or 2 point calibration at each Kprobe level that will be used. a simple set of equations based on this map will give you the eC/TDS and Salinity(of specific salts).
 
 ####Some of the commands are:
-- I : Calibration and general Info dump
-- CL : set low uS/cm reference point
-- CH : set high uS/cm reference point
+-
 
 License Info
 -------------------------
