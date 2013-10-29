@@ -3911,7 +3911,12 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="IC2" pad="5"/>
 <wire x1="14.351" y1="18.482" x2="15.318" y2="18.482" width="0.3048" layer="16"/>
 <wire x1="15.318" y1="18.482" x2="16.256" y2="19.42" width="0.3048" layer="16"/>
+<<<<<<< HEAD
 <wire x1="14.34" y1="16.002" x2="14.351" y2="18.482" width="0" layer="19" extent="16-16"/>
+=======
+<wire x1="14.351" y1="18.482" x2="14.34" y2="18.482" width="0.254" layer="16"/>
+<wire x1="14.34" y1="18.482" x2="14.34" y2="16.002" width="0.254" layer="16"/>
+>>>>>>> MinieCV0.1
 </signal>
 <signal name="N$12">
 <contactref element="ECPROBE" pad="S"/>
