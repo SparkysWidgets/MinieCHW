@@ -38,10 +38,7 @@ Firmware
 Basic Usage
 -------------------------
 
-Usage of MinieC example code is very easy. As of now you read the peak off the output and form a linear map based off a one or 2 point calibration at each Kprobe level that will be used. a simple set of equations based on this map will give you the eC/TDS and Salinity(of specific salts).
-
-####Some of the commands are:
--
+Usage of MinieC example code is very easy. As of now you read the peak off the output and form a linear map based off a one or 2 point calibration at each Kprobe level that will be used. a simple set of equations based on this map will give you the eC/TDS and Salinity(of specific salts). SUT is treated as an unknown conductance/ohms) and is one tap of a op-amp gain voltage divider. Some useful conversions; G=(Vout/Vin)-1 and R = Rf/G, R = 1/eC*E-X where X is conversion to micro siemens based on probe K cell constant. I.E KCell 1 (1uS/cm) is 1E-6, K10 1E-7 and .1 is 1E-5. conductance 1/ohms and PPM=eC*500.
 
 License Info
 -------------------------
