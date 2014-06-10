@@ -3741,6 +3741,9 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="8.89" y="21.3995" size="0.4064" layer="26" rot="MR0"/>
 <attribute name="VALUE" x="8.89" y="20.701" size="0.4064" layer="28" rot="MR0"/>
 </element>
+<element name="D2" library="SparkysWidgets" package="SOD123" value="4148" x="-19.558" y="-8.636"/>
+<element name="D3" library="SparkysWidgets" package="SOD123" value="4148" x="-19.558" y="-14.224"/>
+<element name="C8" library="SparkysWidgets" package="0805" value="100nF" x="-23.876" y="-14.986"/>
 </elements>
 <signals>
 <signal name="+5V">
@@ -3923,6 +3926,10 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="17.78" y1="17.466" x2="17.78" y2="15.124" width="0.254" layer="16"/>
 <wire x1="17.78" y1="15.124" x2="16.764" y2="14.108" width="0.254" layer="16"/>
 <wire x1="16.764" y1="14.108" x2="19.304" y2="14.108" width="0.254" layer="16"/>
+<contactref element="D2" pad="A"/>
+<contactref element="D3" pad="C"/>
+<wire x1="-17.658" y1="-8.636" x2="-21.458" y2="-14.224" width="0" layer="19" extent="1-1"/>
+<wire x1="16.764" y1="14.108" x2="-17.658" y2="-8.636" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$32">
 <contactref element="C6" pad="1"/>
@@ -3947,6 +3954,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="19.95" y1="8.128" x2="19.95" y2="8.266" width="0.254" layer="16"/>
 <wire x1="19.95" y1="8.128" x2="22.606" y2="8.128" width="0.254" layer="16"/>
 <wire x1="22.606" y1="8.128" x2="23.114" y2="7.62" width="0.254" layer="16"/>
+<contactref element="C8" pad="1"/>
+<wire x1="19.95" y1="8.128" x2="-24.776" y2="-14.986" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$34">
 <contactref element="R7" pad="2"/>
@@ -4011,6 +4020,13 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="D1" pad="A"/>
 <wire x1="21.082" y1="22.982" x2="19.366" y2="22.982" width="0.3048" layer="16"/>
 <wire x1="19.366" y1="22.982" x2="19.05" y2="22.666" width="0.3048" layer="16"/>
+</signal>
+<signal name="N$1">
+<contactref element="D2" pad="C"/>
+<contactref element="D3" pad="A"/>
+<contactref element="C8" pad="2"/>
+<wire x1="-17.658" y1="-14.224" x2="-22.976" y2="-14.986" width="0" layer="19" extent="1-1"/>
+<wire x1="-21.458" y1="-8.636" x2="-22.976" y2="-14.986" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
